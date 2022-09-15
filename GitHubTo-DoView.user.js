@@ -8,6 +8,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
 // @grant        GM_addStyle
+// @license MIT
 // ==/UserScript==
 
 (function() {
