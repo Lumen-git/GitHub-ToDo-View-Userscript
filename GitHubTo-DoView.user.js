@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub To-Do View
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Removes the "Public" tag from GitHub repos, allowing you to see "Private" tags more easily. Meant for people who use private repos as WIP projects and needs to quickly see what needs work/to be released
 // @author       Lumen
 // @match        https://github.com/*?tab=repositories
@@ -27,6 +27,9 @@
         console.log(tags[i]);
         if (tags[i].innerText == 'Public') {
             tags[i].hidden = true;
+        }
+        if (tags[i].innerText == 'Private') {
+            tags[i].style.backgroundColor = "lightcoral";
         }
     }
 
