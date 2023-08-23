@@ -5,7 +5,7 @@
 // @description  Removes the "Public" tag from GitHub repos, allowing you to see "Private" tags more easily. Meant for people who use private repos as WIP projects and needs to quickly see what needs work/to be released
 // @author       Lumen
 // @match        https://github.com/*?tab=repositories
-// @match        github.com/*?tab=repositories*
+// @match        github.com/*?*tab=repositories*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
 // @grant        GM_addStyle
